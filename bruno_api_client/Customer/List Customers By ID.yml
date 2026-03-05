@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/customers/CUST-001"
+  url: "{{baseUrl}}/customers/CUST-001x"
   params:
     - name: page
       value: "1"

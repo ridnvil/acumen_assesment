@@ -1,6 +1,6 @@
 name: ecumen
 variables:
   - name: baseUrlMock
-    value: http://localhost:5000/api
+    value: http://10.61.190.61:6000/api
   - name: baseUrl
-    value: http://localhost:8000/api
+    value: http://10.61.190.61:7000/api
