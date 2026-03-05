@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/customers?page=1&limit=1"
+  url: "{{baseUrl}}/customers?page=1&limit=10"
   params:
     - name: page
       value: "1"
       type: query
     - name: limit
-      value: "1"
+      value: "10"
       type: query
   auth: inherit
 
