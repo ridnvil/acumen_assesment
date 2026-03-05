@@ -53,14 +53,14 @@ GET http://127.0.0.1:5000/api/health
 ```
 
 ## List Of Customers
-### Endpoint: `/api/customers`
-### Param: `page` and `limit`
-### Method: `GET`
+#### Endpoint: `/api/customers`
+#### Param: `page` and `limit`
+#### Method: `GET`
 
 ```code
 GET http://127.0.0.1:5000/api/customers?page=1&limit=10
 ```
-### Response: Status Code: `200 OK`
+#### Response: Status Code: `200 OK`
 ```json
 {
   "data": [
@@ -84,12 +84,12 @@ GET http://127.0.0.1:5000/api/customers?page=1&limit=10
 
 
 ## Customer By ID
-### Endpoint: `/api/customers/<string:id>`
-### Method: `GET`
+#### Endpoint: `/api/customers/<string:id>`
+#### Method: `GET`
 ```code
 GET http://127.0.0.1:5000/api/customers/CUST-001
 ```
-### Response: Status Code: `200 OK`
+#### Response: Status Code: `200 OK`
 ```json
 {
     "account_balance": 1500000.0,
@@ -104,7 +104,7 @@ GET http://127.0.0.1:5000/api/customers/CUST-001
 }
 ```
 
-### Response Status Code: `404`
+#### Response Status Code: `404`
 ```json
 {
     "message": "Customer not found"
@@ -114,12 +114,12 @@ GET http://127.0.0.1:5000/api/customers/CUST-001
 
 # API Documentation Pipeline Service
 ## Health Check
-### Endpoint: `/api/health`
-### Method: `GET`
+#### Endpoint: `/api/health`
+#### Method: `GET`
 ```code
 GET http://127.0.0.1:8000/api/health
 ```
-### Response
+#### Response
 ```json
 {
   "message": "Server is healthy"
@@ -127,11 +127,11 @@ GET http://127.0.0.1:8000/api/health
 ```
 ---
 ## Ingest Data
-### Endpoint: `/api/ingest`
-### Method: `POST`
-### Param: `page` and `limit` for handle pagination
-### Request Body: None
-### Response: Status Code: `200 OK`
+#### Endpoint: `/api/ingest`
+#### Method: `POST`
+#### Param: `page` and `limit` for handle pagination
+#### Request Body: None
+#### Response: Status Code: `200 OK`
 ```json
 {
   "status": "success",
@@ -140,10 +140,10 @@ GET http://127.0.0.1:8000/api/health
 ```
 ---
 ## List Of Customers
-### Endpoint: `/api/customers`
-### Method: `GET`
-### Param: `page` and `limit`
-### Response Status Code: `200 OK`
+#### Endpoint: `/api/customers`
+#### Method: `GET`
+#### Param: `page` and `limit`
+#### Response Status Code: `200 OK`
 ```json
 {
   "data": [
@@ -166,9 +166,9 @@ GET http://127.0.0.1:8000/api/health
 ```
 ---
 ## Customer By ID
-### Endpoint: `/api/customers/<string:id>`
-### Method: `GET`
-### Response Status Code: `200 OK`
+#### Endpoint: `/api/customers/<string:id>`
+#### Method: `GET`
+#### Response Status Code: `200 OK`
 ```json
 {
   "customer_id": "CUST-001",
@@ -182,7 +182,7 @@ GET http://127.0.0.1:8000/api/health
   "created_at": "2023-01-15T08:30:00"
 }
 ```
-### Response Status Code `404`
+#### Response Status Code `404`
 ```json
 {
   "detail": "Customer not found"
