@@ -1,9 +1,14 @@
 import requests # type: ignore
 from sqlalchemy.orm import Session # type: ignore
 from ..models import CustomerModel
+from ..core.config import MOCK_SERVER_URL
+
+if MOCK_SERVER_URL is None:
+    raise ValueError("MOCK_SERVER_URL is not set")
+
 
 def process_ingest(page: int, limit: int, db: Session):
-    FLASK_API = "http://localhost:5000/api/customers?page={}&limit={}".format(page, limit)    
+    FLASK_API = "{}/customers?page={}&limit={}".format(MOCK_SERVER_URL, page, limit)    
 
     response = requests.get(FLASK_API)
     response.raise_for_status()
