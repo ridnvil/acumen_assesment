@@ -1,0 +1,7 @@
+info:
+  name: Mock Customer
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
