@@ -25,6 +25,8 @@ services:
   pipeline-service:
     build:
       context: ./pipeline-service
+    env_file:
+      - .env
     container_name: pipeline_service_fastapi
     restart: always
     ports:
